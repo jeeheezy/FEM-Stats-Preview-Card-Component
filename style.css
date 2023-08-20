@@ -11,7 +11,6 @@ body {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
@@ -25,7 +24,7 @@ body {
 .image-container{
     order: 1;
     max-width: 100%;
-    position: relative;
+    background-color: hsl(277, 64%, 61%);
 }
 
 /*why does CSS application not work when I used .image-container picture{}?*/
@@ -33,16 +32,7 @@ body {
     display: block;
     max-width: 100%;
     height:auto;
-    opacity: 0.95;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: hsl(277, 64%, 61%);
+    opacity: 0.7;
     mix-blend-mode: multiply;
 }
 
@@ -106,27 +96,20 @@ body {
         text-align: left;
     }
     .general {
-        /* width: 80%; */
+        width: 80%;
         max-width: 64rem;
     }
     .image-container {
         order: 2;
-        max-width: 50%;
-        width: 100%;
-        align-items: stretch;
-        height: 100%;
-    }
-    .image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        flex: 1;
     }
     .text {
         order: 1;
-        max-width: 50%;
         flex-direction: column;
-        align-items: start;
-        padding: 4rem;
+        max-width: 50%;
+        flex: 1;
+        box-sizing: border-box;
+        padding: 0 5%;
     }
     .header {
         margin: 0 0 1rem 0;
