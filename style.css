@@ -103,6 +103,8 @@ body {
         order: 2;
         flex: 1;
     }
+    /*note box-sizing necessary for including padding in calculation; also flex is shorthand for flex grow, shrink, and basis;
+    instead of setting max-width of 50%, can also set flex-basis to 50% in this example, or set width: 50%*/
     .text {
         order: 1;
         flex-direction: column;

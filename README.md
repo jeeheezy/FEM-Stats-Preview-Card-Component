@@ -16,7 +16,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,83 +27,47 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Mobile Screenshot](./images/mobile-view-screenshot.png)
+![Desktop Screenshot](./images/desktop-view-screenshot.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/jeeheezy/FEM-Stats-Preview-Card-Component](https://github.com/jeeheezy/FEM-Stats-Preview-Card-Component)
+- Live Site URL: [https://jeeheezy.github.io/FEM-Stats-Preview-Card-Component/](https://jeeheezy.github.io/FEM-Stats-Preview-Card-Component/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This was the first time I used the picture html tag instead of img, which helps change the source of the image for responsive layouts. A particular note to make about applying CSS to the images using picture tag is that it ususally is added to the img tag inside the picture tag, since picture's primary purpose is to change the source being referenced. This was also my first time making use of the mix-blend-mode property to apply color on an image.
 
-To see how you can add code snippets, see below:
+This was also a good exercise on scaling image size in respect to it's container while retaining the space ratio. There were a few methods of doing this that I could find, like setting max-width/width or flex-basis. The key property to get maintain a 50/50 container split was using the box-sizing: border-box to ensure padding and borders are included in the width calculations. 
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I'd like to get more practice with responsive layouts that aren't changed just by media queries but can actively scale with the screen size.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Stack overflow thread](https://stackoverflow.com/questions/33145242/why-is-padding-expanding-a-flex-item) - This thread helped me understand how the flex property works and why I was still having issues with flex items being different sizes than what I had wanted.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Jeeho Lee](https://www.linkedin.com/in/jeeho-lee-719852182/)
+- Frontend Mentor - [@jeeheezy](https://www.frontendmentor.io/profile/jeeheezy)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Big thanks to Grace-Snow on the Frontend Mentor discord channel for giving suggestions for improvement and clarification on how the flex property works!
